@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
 import IconButton from "@material-ui/core/IconButton";
 import { Link } from "react-router-dom";
-import "../styles/games.css";
+
 function GameCard(props) {
   const game = props;
   const [active, setActive] = useState("false");
