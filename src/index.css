@@ -1,13 +1,13 @@
 html,
-body {
+body,
+.HomeBackground {
+  width: 100%;
+  height: 100%;
+  background-image: url("./bgr.png");
+  background-size: cover;
   text-align: center;
 }
-.HomeBackground {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  background-size: cover;
-}
+
 .button {
   width: 100%;
   height: 50%;
@@ -19,8 +19,8 @@ body {
   opacity: 1;
   background-color: #0aefff;
 }
-/* Navbar 
-.Navbar {
+/* Navbar */
+.navbar {
   padding: 1.5rem;
   display: flex;
   justify-content: space-around;
@@ -34,13 +34,12 @@ body {
   padding: 0 10px;
 }
 
-.Navbar a {
+.navbar a {
   font-family: "IBM Plex Sans", sans-serif;
   text-decoration: none;
-  color: #110a0a;
+  color: #fff;
   transition: all 0.5s ease;
 }
-.Navbar a.Navbar-active {
+.navbar a.Navbar-active {
   color: #ffd23f;
 }
-*/
