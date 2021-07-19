@@ -10,31 +10,33 @@ function GameCard(props) {
     setActive(!active);
   };
   return (
-    <div className="card" style={{ width: "18rem", margin: "5rem" }}>
-      <img src={game.image} className="card-img-top" alt="game" />
-      <div className="card-body">
-        <h5 className="card-title">{game.name}</h5>
-        <div>
-          <IconButton onClick={toggle}>
-            <h5>Instruction</h5>
-            <ArrowDropDownIcon />
-          </IconButton>
-          {!active ? (
-            <ul>
-              {game.instruction.map((guide, i) => (
-                <li className="list-group-item" key={i}>
-                  {guide}
-                </li>
-              ))}
-            </ul>
-          ) : null}
-        </div>
-        <div>
-          <Link to="/">
-            <button variant="contained" color="primary" className="button">
-              Play Now
-            </button>
-          </Link>
+    <div className="GameCard">
+      <div className="card" style={{ width: "18rem", margin: "5rem" }}>
+        <img src={game.image} className="card-img-top" alt="game" />
+        <div className="card-body">
+          <h5 className="card-title">{game.name}</h5>
+          <div>
+            <IconButton onClick={toggle}>
+              <h5>Instruction</h5>
+              <ArrowDropDownIcon />
+            </IconButton>
+            {!active ? (
+              <ul>
+                {game.instruction.map((guide, i) => (
+                  <li className="list-group-item" key={i}>
+                    {guide}
+                  </li>
+                ))}
+              </ul>
+            ) : null}
+          </div>
+          <div>
+            <Link to="/">
+              <button variant="contained" className="button">
+                Play Now
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
     </div>

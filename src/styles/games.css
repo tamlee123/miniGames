@@ -3,6 +3,12 @@
   height: 100vh;
   display: flex;
   background-size: cover;
+  z-index: 1;
+}
+.GameCard {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
 }
 .button {
   width: 100%;
