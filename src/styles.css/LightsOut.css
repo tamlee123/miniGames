@@ -1,0 +1,8 @@
+.LightsOut {
+  background-color: #212121;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
