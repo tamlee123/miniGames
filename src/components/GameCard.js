@@ -2,15 +2,17 @@ import React, { useState } from "react";
 import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
 import IconButton from "@material-ui/core/IconButton";
 import { Link } from "react-router-dom";
+import "../styles.css/GameCard.css";
 
 function GameCard(props) {
   const game = props;
+
   const [active, setActive] = useState("false");
   const toggle = () => {
     setActive(!active);
   };
   return (
-    <div className="GameCard">
+    <div className="container">
       <div className="card" style={{ width: "18rem", margin: "5rem" }}>
         <img src={game.image} className="card-img-top" alt="game" />
         <div className="card-body">
@@ -31,7 +33,7 @@ function GameCard(props) {
             ) : null}
           </div>
           <div>
-            <Link to="/">
+            <Link to={`/${game.name.toLowerCase()}`}>
               <button variant="contained" className="button">
                 Play Now
               </button>

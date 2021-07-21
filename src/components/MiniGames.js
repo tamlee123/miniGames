@@ -1,16 +1,16 @@
 import React from "react";
 import GameCard from "./GameCard";
 import data from "./../data";
+import "../styles.css/MiniGame.css";
 
 function MiniGames(props) {
   return (
-    <div className="HomeBackground">
+    <div className="MiniGames">
       <div className="container">
         <div className="row">
           {data.games.map((game) => (
-            <div className="col-lg-4">
+            <div className="col-lg-4" key={game._id}>
               <GameCard
-                key={game._id}
                 image={game.image}
                 name={game.name}
                 instruction={game.instruction}
