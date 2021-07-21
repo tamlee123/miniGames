@@ -3,7 +3,7 @@ const data = {
   games: [
     {
       _id: uuidv4(),
-      name: "Lights-out",
+      name: "LightsOut",
       image: "/images/light.jpg",
       instruction: [
         "The board has 25 lights, some are on, and some are off.",
