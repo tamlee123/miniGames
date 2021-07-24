@@ -68,7 +68,9 @@ class HangManGame extends Component {
         <h1>Hang Man</h1>
         <img src={this.props.images[this.state.nWrong]} alt={altText}></img>
         <p>Guessed Wrong: {this.state.nWrong}</p>
-        <p className="Hangman-word">{this.guessedWord()}</p>
+        <p className="Hangman-word">
+          {!gameOver ? this.guessedWord() : this.state.answer}
+        </p>
         <p>{gameState}</p>
         <button id="reset" onClick={this.reset}>
           Restart?
