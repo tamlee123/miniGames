@@ -37,6 +37,7 @@ class HangManGame extends Component {
     return "abcdefghijklmnopqrstuvwxyz".split("").map((ltr) => (
       //each character has a button
       <button
+        key={ltr}
         value={ltr}
         onClick={this.handleGuess}
         disabled={this.state.guessed.has(ltr)}
@@ -46,12 +47,16 @@ class HangManGame extends Component {
     ));
   }
   render() {
+    //join-return the element in the array to a new string
+
     let gameState = this.generateButtons();
+
     return (
-      <div className="HangMan">
+      <div className="Hangman">
         <h1>Hang Man</h1>
         <img src={this.props.images[this.state.nWrong]} alt="hangman"></img>
-        <p className="hangman-word">{this.guessedWord}</p>
+        <p>Guessed Wrong: {this.state.nWrong}</p>
+        <p className="Hangman-word">{this.guessedWord()}</p>
         <p>{gameState}</p>
       </div>
     );
