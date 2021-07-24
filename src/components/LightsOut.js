@@ -1,5 +1,5 @@
 import React from "react";
-import Board from "../lightsoutGame/Board";
+import Board from "../gameLightsout/Board";
 import "../styles.css/LightsOut.css";
 
 function LightsOut(props) {

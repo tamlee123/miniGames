@@ -1,5 +1,5 @@
 import React from "react";
-import HangManGame from "../hangmanGame/HangManGame";
+import HangManGame from "../gameHangman/HangManGame";
 import "../styles.css/Hangman.css";
 
 function Hangman(props) {
