@@ -40,6 +40,34 @@ function YahtzeeGame(props) {
       }));
     }
   }
+  function animateRoll() {
+    setState(() => ({
+      ...state,
+      rolling: true,
+    }));
+    setTimeout(roll, 1000);
+  }
+  function roll(e) {
+    // roll dice whose indexes are in reroll
+    setState((st) => ({
+      ...state,
+      dice: st.dice.map((d, i) =>
+        st.locked[i] ? d : Math.ceil(Math.random() * 6)
+      ),
+      locked: st.rollsLeft > 1 ? st.locked : Array(NUM_DICE).fill(true),
+      rollsLeft: st.rollsLeft > 0 ? st.rollsLeft - 1 : 0,
+      rolling: false,
+    }));
+  }
+  function displayRollInfo() {
+    const messages = [
+      "0 Rolls Left",
+      "1 Roll Left",
+      "2 Rolls Left",
+      "Starting Round",
+    ];
+    return messages[state.rollsLeft];
+  }
   return (
     <div className="Game">
       <header className="Game-header">
@@ -53,6 +81,19 @@ function YahtzeeGame(props) {
             disabled={state.rollsLeft === 0}
             rolling={state.rolling}
           />
+          <div className="Game-button-wrapper">
+            <button
+              disabled={
+                state.locked.every((x) => x) ||
+                state.rollsLeft === 0 ||
+                state.rolling
+              }
+              onClick={animateRoll}
+              className="Game-reroll"
+            >
+              {displayRollInfo()}
+            </button>
+          </div>
         </section>
       </header>
     </div>
