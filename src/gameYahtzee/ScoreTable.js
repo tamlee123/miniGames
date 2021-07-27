@@ -30,7 +30,7 @@ function ScoreTable({ scores, doScore }) {
 
   return (
     <div className="ScoreTable">
-      <section className="section">
+      <section className="ScoreTable-section">
         <h2>Upper</h2>
         <table cellSpacing="0">
           <tbody>
@@ -73,7 +73,7 @@ function ScoreTable({ scores, doScore }) {
           </tbody>
         </table>
       </section>
-      <section className="section section-lower">
+      <section className="ScoreTable-section ScoreTable-section-lower">
         <h2>Lower</h2>
         <table cellSpacing="0">
           <tbody>

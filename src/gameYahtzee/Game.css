@@ -8,18 +8,10 @@
   justify-content: center;
   align-items: center;
 }
-.Game-header {
-  width: 100%;
-  background: linear-gradient(-45deg, #40916c, #80ffdb);
-  background-size: 400% 400%;
-  -webkit-animation: Gradient 15s ease infinite;
-  -moz-animation: Gradient 15s ease infinite;
-  animation: Gradient 15s ease infinite;
-}
-h2 {
+h1 {
   font-weight: 100;
   font-size: 2em;
-  border-bottom: 2px solid purple;
+  border-bottom: 2px solid #2d6a4f;
   display: inline-block;
 }
 .Game-dice-section {
@@ -28,6 +20,7 @@ h2 {
   margin-right: auto;
   margin-top: 0;
 }
+
 .Game-button-wrapper {
   display: flex;
   justify-content: center;
@@ -68,6 +61,20 @@ h2 {
   background-color: #ddd;
   cursor: not-allowed;
   opacity: 0.5;
+}
+
+.Game-description {
+  font-style: italic;
+  color: white;
+}
+
+.Game-header {
+  width: 100%;
+  background: linear-gradient(-45deg, #52b788, #2d6a4f);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
 }
 
 @keyframes Gradient {

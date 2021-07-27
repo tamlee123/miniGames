@@ -6,13 +6,14 @@
   background-color: white;
   padding: 1em;
 }
-.table {
+
+.ScoreTable table {
   width: 100%;
   margin: 0 auto;
   min-width: 400px;
 }
 
-.section {
+.ScoreTable-section {
   vertical-align: top;
   width: 100%;
 }

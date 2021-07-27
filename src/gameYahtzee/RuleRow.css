@@ -1,15 +1,9 @@
 .RuleRow {
   transition: all 0.2s;
 }
-
 .RuleRow-active:hover {
   cursor: pointer;
   background: rgba(227, 242, 253, 0.5);
-}
-
-.RuleRow-name {
-  width: 50%;
-  text-align: left;
 }
 
 .RuleRow-disabled {
@@ -24,11 +18,14 @@
   animation: Slide 1s ease 1;
 }
 
-.RuleRow-score {
-  width: 50%;
-  text-align: right;
+@keyframes Slide {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 51%;
+  }
 }
-
 .RuleRow-disabled td:first-child {
   text-decoration: line-through;
 }
@@ -37,11 +34,17 @@
   cursor: not-allowed;
 }
 
-@keyframes Slide {
-  0% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 51%;
-  }
+.RuleRow td {
+  padding: 0.3em;
+  border-bottom: solid 1px black;
+}
+
+.RuleRow-name {
+  width: 50%;
+  text-align: left;
+}
+
+.RuleRow-score {
+  width: 50%;
+  text-align: right;
 }
