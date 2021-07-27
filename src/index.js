@@ -6,6 +6,7 @@ import App from "./App";
 import "./index.css";
 import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "@fortawesome/fontawesome-free/css/all.css";
 
 ReactDOM.render(
   <React.StrictMode>
