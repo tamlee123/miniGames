@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Dice from "./Dice";
 import "./Game.css";
+import ScoreTable from "./ScoreTable";
 const NUM_DICE = 5;
 const NUM_ROLL = 3;
 
@@ -68,6 +69,16 @@ function YahtzeeGame(props) {
     ];
     return messages[state.rollsLeft];
   }
+  function doScore(ruleName, ruleFn) {
+    // evaluate this ruleFn with the dice and score this rulename
+    setState((st) => ({
+      ...state,
+      scores: { ...st.scores, [ruleName]: ruleFn(state.dice) },
+      rollsLeft: NUM_ROLL,
+      locked: Array(NUM_DICE).fill(false),
+    }));
+    //animateRoll();
+  }
   return (
     <div className="Game">
       <header className="Game-header">
@@ -96,6 +107,7 @@ function YahtzeeGame(props) {
           </div>
         </section>
       </header>
+      <ScoreTable doScore={doScore} scores={state.scores} />
     </div>
   );
 }
