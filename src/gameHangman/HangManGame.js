@@ -64,7 +64,7 @@ class HangManGame extends Component {
     if (gameOver) gameState = "Game Over-You Lose!";
 
     return (
-      <div className="contain">
+      <div className="container">
         <div className="row">
           <div className="Hangman">
             <h1>Hang Man</h1>
