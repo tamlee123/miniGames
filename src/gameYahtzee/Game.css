@@ -14,6 +14,15 @@
   border-bottom: 2px solid #2d6a4f;
   display: inline-block;
 }
+.Game-header {
+  width: 100%;
+  background: linear-gradient(-45deg, #52b788, #2d6a4f);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+}
+
 .Game-dice-section {
   width: 80%;
   margin-left: auto;
@@ -63,20 +72,6 @@
   opacity: 0.5;
 }
 
-.Game-description {
-  font-style: italic;
-  color: white;
-}
-
-.Game-header {
-  width: 100%;
-  background: linear-gradient(-45deg, #52b788, #2d6a4f);
-  background-size: 400% 400%;
-  -webkit-animation: Gradient 15s ease infinite;
-  -moz-animation: Gradient 15s ease infinite;
-  animation: Gradient 15s ease infinite;
-}
-
 @keyframes Gradient {
   0% {
     background-position: 0% 50%;
@@ -90,9 +85,6 @@
 }
 @media (max-width: 1028px) {
   .Game {
-    width: 100%;
-  }
-  .Game-dice-section {
     width: 100%;
   }
 }

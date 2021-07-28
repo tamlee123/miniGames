@@ -29,10 +29,10 @@ function ScoreTable({ scores, doScore }) {
   }
 
   return (
-    <div className="ScoreTable table-responsive">
+    <div className="ScoreTable">
       <section className="ScoreTable-section">
         <h2>Upper</h2>
-        <table className="table" cellSpacing="0">
+        <table cellSpacing="0">
           <tbody>
             <RuleRow
               name="Ones"

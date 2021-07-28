@@ -14,3 +14,8 @@
   font-size: 5rem;
   width: 50%;
 }
+@media (max-width: 1028px) {
+  .title {
+    font-size: 2rem;
+  }
+}

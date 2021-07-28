@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   font-size: 0.9rem;
-  width: 80%;
+  width: 100%;
   background-color: white;
   padding: 1em;
 }
@@ -10,10 +10,25 @@
 .ScoreTable table {
   width: 100%;
   margin: 0 auto;
-  min-width: 400px;
+  /* min-width: 400px; */
 }
 
 .ScoreTable-section {
   vertical-align: top;
   width: 100%;
+}
+.ScoreTable-section-lower {
+  padding-bottom: 2rem;
+}
+@media only screen and (max-width: 1028px) {
+  .ScoreTable {
+    height: 110vh;
+  }
+
+  .ScoreTable h2 {
+    margin: 10px auto;
+  }
+  .ScoreTable table {
+    min-width: 350px;
+  }
 }
