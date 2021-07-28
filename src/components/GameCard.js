@@ -12,7 +12,7 @@ function GameCard(props) {
     setActive(!active);
   };
   return (
-    <div className="container">
+    <div className="container game-card">
       <div className="card" style={{ width: "18rem", margin: "5rem" }}>
         <img src={game.image} className="card-img-top" alt="game" />
         <div className="card-body">

@@ -9,7 +9,7 @@ function MiniGames(props) {
       <div className="container">
         <div className="row">
           {data.games.map((game) => (
-            <div className="col-lg-4" key={game._id}>
+            <div className="col-xl-4 col-lg-6" key={game._id}>
               <GameCard
                 image={game.image}
                 name={game.name}
