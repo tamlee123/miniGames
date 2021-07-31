@@ -62,16 +62,16 @@ class HangManGame extends Component {
     let gameState = this.generateButtons();
     if (isWinner) gameState = "Yay-You Win!";
     if (gameOver) gameState = "Game Over-You Lose!";
-
+    const { nWrong, answer } = this.state;
     return (
       <div className="container">
         <div className="row">
           <div className="Hangman">
             <h1>Hang Man</h1>
-            <img src={this.props.images[this.state.nWrong]} alt={altText}></img>
+            <img src={this.props.images[nWrong]} alt={altText}></img>
             <p>Guessed Wrong: {this.state.nWrong}</p>
             <p className="Hangman-word">
-              {!gameOver ? this.guessedWord() : this.state.answer}
+              {!gameOver ? this.guessedWord() : answer}
             </p>
             <p>{gameState}</p>
             <button id="reset" onClick={this.reset}>

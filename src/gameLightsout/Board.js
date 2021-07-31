@@ -43,10 +43,11 @@ class Board extends Component {
     this.setState({ board: board, hasWon: hasWon });
   };
   makeTable = () => {
+    const { nrows, ncols } = this.props;
     let tblBoard = [];
-    for (let y = 0; y < this.props.nrows; y++) {
+    for (let y = 0; y < nrows; y++) {
       let row = [];
-      for (let x = 0; x < this.props.ncols; x++) {
+      for (let x = 0; x < ncols; x++) {
         let coord = `${y}-${x}`;
         row.push(
           <Cell
