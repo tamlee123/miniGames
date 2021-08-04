@@ -12,7 +12,7 @@ function Instruction(props) {
   };
   return (
     <div className="instruction">
-      <IconButton onClick={toggle}>
+      <IconButton color="secondary" onClick={toggle}>
         <h3 className="instro">Instruction</h3>
         <ArrowDropDownIcon />
       </IconButton>
