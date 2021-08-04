@@ -14,7 +14,7 @@ const data = {
       name: "Hangman",
       image: "/images/hangman.png",
       description:
-        "guessing game where the player attempts to build a missing word by guessing one letter at a time.",
+        "A guessing game where the player attempts to build a missing word by guessing one letter at a time.",
     },
 
     {
