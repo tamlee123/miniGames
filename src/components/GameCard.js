@@ -19,18 +19,10 @@ function GameCard(props) {
           <h5 className="card-title">{game.name}</h5>
           <div>
             <IconButton onClick={toggle}>
-              <h5>Instruction</h5>
+              <h5 className="desc">Description</h5>
               <ArrowDropDownIcon />
             </IconButton>
-            {!active ? (
-              <ul>
-                {game.instruction.map((guide, i) => (
-                  <li className="list-group-item" key={i}>
-                    {guide}
-                  </li>
-                ))}
-              </ul>
-            ) : null}
+            {!active ? <ul>{game.description}</ul> : null}
           </div>
           <div>
             <Link to={`/${game.name.toLowerCase()}`}>
