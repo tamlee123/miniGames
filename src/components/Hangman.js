@@ -4,7 +4,7 @@ import "../styles.css/Hangman.css";
 
 function Hangman(props) {
   return (
-    <div className="HangMan">
+    <div className="Hang-Man">
       <HangManGame />
     </div>
   );
