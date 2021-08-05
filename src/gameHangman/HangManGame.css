@@ -74,4 +74,7 @@
   .Hangman img {
     height: 30%;
   }
+  .Hangman {
+    zoom: 0;
+  }
 }
