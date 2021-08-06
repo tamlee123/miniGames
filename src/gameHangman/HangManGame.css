@@ -76,4 +76,7 @@
   .Hangman {
     zoom: 0;
   }
+  .Hangman button {
+    margin: 1%;
+  }
 }
