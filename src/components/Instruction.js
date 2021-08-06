@@ -12,12 +12,12 @@ function Instruction(props) {
   };
   return (
     <div className="instruction">
-      <IconButton color="secondary" onClick={toggle}>
-        <h3 className="instro">Instruction</h3>
+      <IconButton onClick={toggle}>
+        <h3 className="instr">Instruction</h3>
         <ArrowDropDownIcon />
       </IconButton>
       {!active ? (
-        <ul>
+        <ul className="guide">
           {instruction.map((guide, i) => (
             <li className="list-group-item list-group-item-info" key={i}>
               {guide}

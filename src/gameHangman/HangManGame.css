@@ -75,8 +75,14 @@
   }
   .Hangman {
     zoom: 0;
+    height: 110vh;
   }
   .Hangman button {
     margin: 1%;
+  }
+}
+@media (max-width: 768px) {
+  .Hangman {
+    height: 100vh;
   }
 }
