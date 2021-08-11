@@ -46,7 +46,7 @@ class HangManGame extends Component {
       //each character has a button
       <button
         key={ltr}
-        value={ltr}
+        value={ltr} 
         onClick={this.handleGuess}
         disabled={this.state.guessed.has(ltr)}
       >
