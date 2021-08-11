@@ -83,10 +83,3 @@ table tr:last-child td:last-child {
     color: #146c80;
   }
 }
-
-.break {
-  border: 0.2rem solid purple;
-  padding: 1rem;
-  white-space: pre-line;
-  flex-wrap: wrap;
-}
