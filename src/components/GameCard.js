@@ -13,7 +13,7 @@ function GameCard(props) {
   };
   return (
     <div className="game-card">
-      <div className="card" style={{ width: "18rem", margin: "5rem" }}>
+      <div className="card" style={{ width: "18rem" }}>
         <img src={game.image} className="card-img-top" alt="game" />
         <div className="card-body">
           <h5 className="card-title">{game.name}</h5>

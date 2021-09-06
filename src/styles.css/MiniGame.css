@@ -1,5 +1,21 @@
 .MiniGames {
   text-align: center;
   align-items: center;
+  margin: 3rem;
+  height: 100vh;
 }
 
+@media only screen and (max-width: 800px) {
+  .MiniGames {
+    height: 250vh;
+    align-items: center;
+    margin-left: 20%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .MiniGames {
+    align-items: center;
+    margin-left: 3%;
+  }
+}

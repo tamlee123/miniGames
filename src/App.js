@@ -8,7 +8,7 @@ import Yahtzee from "./components/Yahtzee";
 import "./App.css";
 function App() {
   return (
-    <div>
+    <div className="wrapper">
       <Navbar />
       <Switch>
         <Route path="/lightsout" component={LightsOut} />
