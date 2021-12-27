@@ -27,7 +27,7 @@ function GameCard(props) {
           <div>
             <Link to={`/${game.name.toLowerCase()}`}>
               <button variant="contained" className="button">
-                Play Now
+                Play Now!
               </button>
             </Link>
           </div>
