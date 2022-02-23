@@ -15,6 +15,7 @@ function MiniGames(props) {
                 name={game.name}
                 description={game.description}
               />
+              <div>" "</div>
             </div>
           ))}
         </div>

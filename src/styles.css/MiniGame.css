@@ -1,21 +1,32 @@
 .MiniGames {
   text-align: center;
   align-items: center;
-  margin: 3rem;
+  margin: 10% 0 0 8%;
   height: 100vh;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 991px) {
   .MiniGames {
     height: 250vh;
     align-items: center;
-    margin-left: 20%;
+    margin: 5% 0 0 30%;
   }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 750px) {
   .MiniGames {
-    align-items: center;
-    margin-left: 3%;
+    margin: 5% 0 0 25%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .MiniGames {
+    margin: 5% 0 0 20%;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .MiniGames {
+    margin: 5% 0 0 10%;
   }
 }

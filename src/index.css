@@ -5,8 +5,8 @@ html {
   box-sizing: border-box;
 }
 .wrapper {
-  display: grid;
-  grid-gap: 20px;
+  /* display: grid; */
+  /* grid-gap: 20px; */
   background-color: black;
 }
 body {
